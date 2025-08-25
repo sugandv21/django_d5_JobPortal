@@ -4,6 +4,7 @@
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto">
                 {% if user.is_authenticated %}
+                 <li class="nav-item"><a class="nav-link">Welcome, {{ user.username }}</a></li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'dashboard' %}">Dashboard</a>
                     </li>
@@ -22,3 +23,4 @@
         </div>
     </div>
 </nav>
+
